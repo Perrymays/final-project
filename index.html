@@ -28,23 +28,7 @@
    <title>Module 2 Final Project (Example Website)</title>
 </head>
 <body>
-  <nav class="navbar">
-      <div class="logo">MyProject</div>
-      
-      <!-- Font Awesome Toggler Icon Button -->
-      <button class="burger-menu" id="burgerToggle" aria-label="Toggle navigation">
-        <i class="fa fa-navicon"></i>
-      </button>
-      
-      <!-- Navigation Menu Container -->
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
+  
     <section id="landing">
         <nav>
             <div class="row nav__row">
@@ -60,11 +44,13 @@
             <a href="#" class="nav__link">Login</a>
             <a href="#" class="nav__link nav__link--primary">Sign up</a>
             </div>  
-            <button class="btn__menu" onclick="openMenu"></button>  
+            <button class="btn__menu" onclick="openMenu()">  
+              <i class="fas fa-bars"></i>
+            </button>
             </div>
             </nav>
             <div class="menu">
-             <button class="btn__close" onclick="closeMenu">
+             <button class="btn__close" onclick="closeMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-lj69nl-14 fASujC">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -587,6 +573,7 @@
       </div>
     </footer>
     <span id="PING_IFRAME_FORM_DEECTION" style="display: none;"></span>
-      7           
+      7   
+      <script src="./index.js"></script>        
 </body>
 </html>

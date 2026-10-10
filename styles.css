@@ -137,7 +137,7 @@ nav {
   margin: 0 auto;
 }
 .nav__links {
-  display: none;
+  display: flex;
   align-items: center;
   padding-bottom: 2px;
 }
@@ -204,10 +204,11 @@ nav {
   cursor: pointer;
 }
 .btn__menu {
+  display: none;
   background-color: transparent;
   border: none;
-  display: block;
-  transition: all 300ms ease;
+  cursor: pointer;
+  font-size: 24px;
 }
 .btn__menu--svg:hover {
   filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg)
@@ -1163,9 +1164,9 @@ footer {
 
 /* MOBILE RESPONSIVENESS */
 
-@media (max-width: 1280px) {
-  header .row {
-    align-items: flex-end;
+@media (max-width: 1024px) {
+  nav__links {
+    display: none;
   }
 
   .steps__grid {
