@@ -18,13 +18,13 @@ body {
 
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
 .row__narrow {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -47,6 +47,10 @@ h1 {
    line-height: 1.25;
 }
 
+.purple {
+#6415ff
+}
+
 p {
     font-size: 18px;
     line-height: 1.5;
@@ -62,7 +66,11 @@ p {
 
 .section__title {
   font-size: 48px;
-  line-height: 1.25;
+  font-weight: 900;
+  color: rgb(36, 62, 99);
+  line-height: 1.5;
+  margin: 16px 0;
+  letter-spacing: 0.025em;
 }
 #features .section__title,
 #pricing .section__title {
